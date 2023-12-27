@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Popins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Popins !important;
+}
+
+body {
+  background-color: var(--Off-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: var(--White);
+  width: 420px;
+  max-width: 80%;
+  padding: 30px;
+  position: relative;
+  border-radius: 1rem;
+  border-bottom-right-radius: 6rem;
+}
+
+.set1 label {
+  color: var(--Smokey-grey);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.set1 input:placeholder-shown {
+  font-weight: 800;
+  text-align: center;
+  font-size: medium;
+  padding: 2px 5px;
+}
+
+.set1 input {
+  width: 80px;
+  height: 40px;
+  padding: 2px 3px;
+  border-radius: 5px;
+  border: 2px solid var(--Off-white);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0.5rem;
+  margin-bottom: 0;
+}
+
+.set1 {
+  display: flex;
+}
+
+.box label {
+  font-size: x-small;
+  font-weight: bolder;
+}
+.box small {
+  color: var(--Light-red);
+  font-size: x-small;
+}
+.set2 {
+  display: flex;
+  align-items: center;
+}
+.set2 button {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Purple);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 0%;
+}
+.set2 hr {
+  width: 100%;
+}
+
+.set3 .display {
+  font-size: 2em;
+  font-weight: bolder;
+  font-style: italic;
+  height: fit-content;
+}
+
+.set3 span {
+  color: var(--Purple);
+}
+
+@media (max-width: 550px) {
+  .display h1 {
+    font-size: 1.25em;
+    font-weight: 800;
+  }
+  .container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .set1 {
+    margin-top: 10%;
+    height: 20%;
+  }
+  .set2 {
+    position: relative;
+  }
+  .set2 .submit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
